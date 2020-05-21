@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Map</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- stylesheets -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <h1>Weather Map</h1>
+    </header>
+    <main>
+        <input id="search" type="text" autocomplete="off" placeholder="Enter location">
+        <button id="search-btn">Search</button>
+        <section id="weather-panels" class="weather-panels"></section>
+        <div id="map"></div>
+    </main>
+    <!-- scripts -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js'></script>
+    <script src="js/mapbox-geocode-utils.js"></script>
+    <script src="js/keys.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
